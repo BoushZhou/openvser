@@ -87,7 +87,7 @@ Download_ocserv(){
 	fi
 }
 Service_ocserv(){
-	if ! wget --no-check-certificate https://github.com/BoushZhou/openvser/blob/master/ocserv_debian -O /etc/init.d/ocserv; then
+	if ! wget --no-check-certificate https://raw.githubusercontent.com/BoushZhou/openvser/master/ocserv_debian -O /etc/init.d/ocserv; then
 		echo -e "${Error} ocserv 服务 管理脚本下载失败 !" && over
 	fi
 	chmod +x /etc/init.d/ocserv
